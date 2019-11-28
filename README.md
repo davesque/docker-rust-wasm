@@ -9,7 +9,7 @@ From your rust project root directory:
 ```bash
 docker run \
   --rm \
-  --volume "$(shell pwd):/mnt" \
+  --volume "${PWD}:/mnt" \
   --workdir '/mnt' \
   davesque/docker-rust-node \
   wasm-pack test --node -- --workspace
