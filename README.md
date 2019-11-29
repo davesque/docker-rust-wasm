@@ -11,6 +11,6 @@ docker run \
   --rm \
   --volume "${PWD}:/mnt" \
   --workdir '/mnt' \
-  davesque/docker-rust-node \
+  davesque/rust-node \
   wasm-pack test --node -- --workspace
 ```
